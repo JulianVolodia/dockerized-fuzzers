@@ -9,4 +9,4 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /work
-RUN npm i -g jfsuzz
+RUN npm i -g jsfuzz
