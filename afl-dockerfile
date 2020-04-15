@@ -8,8 +8,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /work
-ARG CC=gcc
-ARG CXX=g++
+#ARG CC=gcc
+#ARG CXX=g++
 ARG LLVM_CONFIG=llvm-config
 RUN git clone https://github.com/vanhauser-thc/AFLplusplus
 RUN cd AFLplusplus && make clean -j4 && make distrib -j4 && \
